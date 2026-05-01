@@ -29,7 +29,7 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
   };
 
   return (
-    <div className="fixed inset-0 z-[200] bg-gradient-to-br from-[#0d131f] via-[#1e293b] to-[#020617] flex items-center justify-center overflow-hidden">
+    <div className="fixed inset-0 z-[200] bg-gradient-to-br from-[#1a140a] via-[#2d2412] to-[#0a0804] flex items-center justify-center overflow-hidden">
       <AnimatePresence mode="wait">
         {!hasStarted ? (
           <motion.div 
@@ -47,8 +47,8 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
               className="relative"
             >
               {/* Premium Background Ambient Glows */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300%] h-[300%] bg-brand-sakura/10 blur-[120px] rounded-full pointer-events-none" />
-              <div className="absolute top-0 right-0 w-[200%] h-[200%] bg-brand-gold/5 blur-[100px] rounded-full pointer-events-none" />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300%] h-[300%] bg-brand-gold/10 blur-[120px] rounded-full pointer-events-none" />
+              <div className="absolute top-0 right-0 w-[200%] h-[200%] bg-brand-gold-light/5 blur-[100px] rounded-full pointer-events-none" />
               
               <h2 className="relative text-brand-gold-light uppercase tracking-[0.7em] text-[10px] sm:text-xs font-bold mb-4 sm:mb-8 drop-shadow-md">
                 Royal Invitation
@@ -66,7 +66,7 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
               onClick={handleStart}
               className="group relative px-20 py-6 bg-white/5 hover:bg-white/10 backdrop-blur-3xl border border-white/20 rounded-full transition-all duration-700 hover:scale-110 active:scale-95 shadow-[0_20px_50px_rgba(0,0,0,0.4)] overflow-hidden"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-brand-gold/20 via-brand-sakura-deep/10 to-brand-gold/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+              <div className="absolute inset-0 bg-gradient-to-r from-brand-gold/20 via-brand-gold-deep/10 to-brand-gold/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative flex items-center gap-5">
                 <span className="text-white tracking-[0.5em] font-bold text-[11px] uppercase drop-shadow-md">Enter Invitation</span>
                 <Play className="w-4 h-4 text-brand-gold-light fill-brand-gold-light transition-transform group-hover:scale-125" />
@@ -94,7 +94,7 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
                 setTimeout(onComplete, 1000);
               }}
             >
-              <source src="/give_beautiful_live_video_202604291917.mp4" type="video/mp4" />
+              <source src="/Video Project 5.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             

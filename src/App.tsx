@@ -12,6 +12,7 @@ import { Location } from './components/Location';
 import { RSVPForm } from './components/RSVPForm';
 import { Footer } from './components/Footer';
 import { IntroVideo } from './components/IntroVideo';
+import { HeroContent } from './components/HeroContent';
 
 export default function App() {
   const [showIntro, setShowIntro] = useState(true);
@@ -64,9 +65,9 @@ export default function App() {
             {/* Music Toggle Button */}
             <button
               onClick={toggleMusic}
-              className="fixed bottom-8 right-8 z-[60] w-14 h-14 glass rounded-full flex items-center justify-center text-brand-sakura-deep hover:bg-stone-800 hover:text-brand-champagne transition-all active:scale-90 shadow-2xl group"
+              className="fixed bottom-8 right-8 z-[60] w-14 h-14 glass rounded-full flex items-center justify-center text-brand-gold-deep hover:bg-stone-800 hover:text-brand-champagne transition-all active:scale-90 shadow-2xl group"
             >
-              <div className="absolute inset-0 rounded-full border border-brand-sakura/20 scale-110 group-hover:scale-125 transition-transform" />
+              <div className="absolute inset-0 rounded-full border border-brand-gold/20 scale-110 group-hover:scale-125 transition-transform" />
               {isMusicPlaying ? <Volume2 className="w-6 h-6" /> : <VolumeX className="w-6 h-6" />}
             </button>
 
@@ -74,22 +75,24 @@ export default function App() {
               <Hero />
             </section>
 
+            <HeroContent />
+
             <section id="countdown" className="py-16 sm:py-32 relative overflow-hidden bg-gradient-to-br from-brand-champagne via-brand-ivory to-brand-champagne">
               {/* Premium Background Ambient Glows */}
               <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
-                <div className="absolute -top-[20%] -right-[10%] w-[50%] h-[70%] bg-brand-sakura/40 blur-[120px] rounded-full" />
-                <div className="absolute -bottom-[20%] -left-[10%] w-[50%] h-[70%] bg-brand-sakura-deep/20 blur-[120px] rounded-full" />
+                <div className="absolute -top-[20%] -right-[10%] w-[50%] h-[70%] bg-brand-gold-light/20 blur-[120px] rounded-full" />
+                <div className="absolute -bottom-[20%] -left-[10%] w-[50%] h-[70%] bg-brand-gold-deep/10 blur-[120px] rounded-full" />
               </div>
               
               <div className="relative z-10 max-w-5xl mx-auto px-6 flex flex-col items-center text-center">
                 <div className="inline-flex items-center gap-4 mb-6">
-                  <div className="w-12 h-[1px] bg-gradient-to-r from-transparent to-brand-sakura-deep/60" />
-                  <span className="text-brand-sakura-deep uppercase tracking-[0.5em] text-[11px] font-semibold font-sans drop-shadow-sm">The Final Countdown</span>
-                  <div className="w-12 h-[1px] bg-gradient-to-l from-transparent to-brand-sakura-deep/60" />
+                  <div className="w-12 h-[1px] bg-gradient-to-r from-transparent to-brand-gold-deep/60" />
+                  <span className="text-brand-gold-deep uppercase tracking-[0.5em] text-[11px] font-semibold font-sans drop-shadow-sm">The Final Countdown</span>
+                  <div className="w-12 h-[1px] bg-gradient-to-l from-transparent to-brand-gold-deep/60" />
                 </div>
                 
                 <h2 className="text-5xl sm:text-7xl font-display text-stone-800 tracking-tight mb-6 drop-shadow-sm">
-                  Until We Say <span className="italic text-brand-sakura-deep font-light">"I Do"</span>
+                  Until We Say <span className="italic text-brand-gold-deep font-light">"I Do"</span>
                 </h2>
                 
                 <p className="text-lg sm:text-xl font-serif italic text-stone-600/80 mb-12 sm:mb-16 max-w-2xl text-center leading-relaxed">
@@ -106,19 +109,19 @@ export default function App() {
             </section>
 
             <section id="ceremony" className="py-16 sm:py-32 bg-brand-champagne/40 relative">
-              <div className="absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-brand-sakura-deep/20 to-transparent" />
+              <div className="absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-brand-gold-deep/20 to-transparent" />
               <CeremonyDetails />
             </section>
 
             {/* Timeline section removed entirely as requested */}
 
             <section id="gallery" className="py-16 sm:py-32 bg-gradient-to-b from-brand-ivory via-brand-champagne/40 to-brand-ivory relative overflow-hidden">
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[1px] bg-brand-sakura-deep/10" />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[1px] bg-brand-gold-deep/10" />
               <Gallery />
             </section>
 
             <section id="location" className="py-16 sm:py-32 bg-gradient-to-b from-brand-champagne/20 to-brand-ivory relative">
-              <div className="absolute -top-[10%] -right-[5%] w-[40%] h-[60%] bg-brand-sakura/20 blur-[100px] rounded-full pointer-events-none" />
+              <div className="absolute -top-[10%] -right-[5%] w-[40%] h-[60%] bg-brand-gold/20 blur-[100px] rounded-full pointer-events-none" />
               <Location />
             </section>
 

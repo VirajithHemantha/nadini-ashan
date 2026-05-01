@@ -3,10 +3,10 @@ import { motion, AnimatePresence } from 'motion/react';
 import { X, ZoomIn } from 'lucide-react';
 
 const images = [
-  { id: 1, url: '/Screenshot 2026-04-29 192215.png', fallback: 'https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=800&auto=format&fit=crop', title: 'The Beginning' },
-  { id: 2, url: '/1.png', fallback: 'https://images.unsplash.com/photo-1522673607200-164d1f624698?q=80&w=800&auto=format&fit=crop', title: 'Our Journey' },
-  { id: 3, url: '/2.png', fallback: 'https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=800&auto=format&fit=crop', title: 'A Thousand Words' },
-  { id: 4, url: '/3.png', fallback: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=800&auto=format&fit=crop', title: 'Endless Love' },
+  { id: 1, url: '/11.jpg', fallback: 'https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=800&auto=format&fit=crop', title: 'The Beginning' },
+  { id: 2, url: '/12.jpg', fallback: 'https://images.unsplash.com/photo-1522673607200-164d1f624698?q=80&w=800&auto=format&fit=crop', title: 'Our Journey' },
+  { id: 3, url: '/13.jpg', fallback: 'https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=800&auto=format&fit=crop', title: 'A Thousand Words' },
+  { id: 4, url: '/14.jpg', fallback: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=800&auto=format&fit=crop', title: 'Endless Love' },
 ];
 
 export const Gallery: React.FC = () => {
@@ -35,7 +35,7 @@ export const Gallery: React.FC = () => {
       </style>
 
       {/* Premium ambient backdrop & glows */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-gradient-radial from-brand-sakura/15 to-transparent rounded-full blur-[100px] pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-gradient-radial from-brand-gold/15 to-transparent rounded-full blur-[100px] pointer-events-none -z-10" />
 
       <div className="max-w-[90rem] mx-auto px-6 mb-12 sm:mb-20 text-center relative z-10 flex flex-col items-center">
         <motion.div
@@ -45,12 +45,12 @@ export const Gallery: React.FC = () => {
           transition={{ duration: 1 }}
         >
           <div className="inline-flex items-center gap-4 mb-4 sm:mb-6 justify-center">
-            <div className="w-12 sm:w-24 h-[1px] bg-gradient-to-r from-transparent to-brand-sakura-deep/60" />
-            <span className="text-brand-sakura-deep uppercase tracking-[0.5em] sm:tracking-[0.6em] text-[10px] sm:text-[11px] font-bold font-sans drop-shadow-sm">A Lifetime OF</span>
-            <div className="w-12 sm:w-24 h-[1px] bg-gradient-to-l from-transparent to-brand-sakura-deep/60" />
+            <div className="w-12 sm:w-24 h-[1px] bg-gradient-to-r from-transparent to-brand-gold-deep/60" />
+            <span className="text-brand-gold-deep uppercase tracking-[0.5em] sm:tracking-[0.6em] text-[10px] sm:text-[11px] font-bold font-sans drop-shadow-sm">A Lifetime OF</span>
+            <div className="w-12 sm:w-24 h-[1px] bg-gradient-to-l from-transparent to-brand-gold-deep/60" />
           </div>
           <h2 className="text-5xl sm:text-7xl lg:text-[5.5rem] font-display text-stone-800 tracking-tight drop-shadow-sm leading-tight">
-            Our <span className="italic font-light text-brand-sakura-deep">Gallery</span>
+            Our <span className="italic font-light text-brand-gold-deep">Gallery</span>
           </h2>
         </motion.div>
       </div>
@@ -67,7 +67,7 @@ export const Gallery: React.FC = () => {
           {marqueeImages.map((image, index) => (
             <div
               key={`${image.id}-${index}`}
-              className="relative flex-none w-[75vw] sm:w-[45vw] lg:w-[28vw] aspect-[3/4] sm:aspect-[4/5] rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.1)] group cursor-pointer border-[8px] sm:border-[10px] border-white/90 bg-brand-champagne transform transition-all duration-700 hover:-translate-y-4 hover:shadow-[0_40px_60px_rgba(115,130,160,0.2)]"
+              className="relative flex-none w-[75vw] sm:w-[45vw] lg:w-[28vw] aspect-[3/4] sm:aspect-[4/5] rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.1)] group cursor-pointer border-[8px] sm:border-[10px] border-white/90 bg-brand-champagne transform transition-all duration-700 hover:-translate-y-4 hover:shadow-[0_40px_60px_rgba(197,160,89,0.2)]"
               onClick={() => setSelectedImage(image.url)}
             >
               <img
@@ -84,7 +84,7 @@ export const Gallery: React.FC = () => {
                 <div className="text-white text-center transform translate-y-6 group-hover:translate-y-0 transition-transform duration-700 ease-out">
                   <ZoomIn className="w-8 h-8 sm:w-10 sm:h-10 mx-auto mb-4 text-white/90 drop-shadow-md opacity-80" />
                   <p className="font-serif text-3xl sm:text-4xl tracking-wide drop-shadow-lg font-light">{image.title}</p>
-                  <div className="w-16 h-[2px] bg-brand-sakura/80 mx-auto mt-5 drop-shadow-md" />
+                  <div className="w-16 h-[2px] bg-brand-gold/80 mx-auto mt-5 drop-shadow-md" />
                 </div>
               </div>
             </div>

@@ -16,7 +16,7 @@ export const FloatingPetals: React.FC = () => {
   const [petals, setPetals] = useState<Petal[]>([]);
 
   useEffect(() => {
-    const colors = ['#7382a0', '#a2aec4', '#d4af37', '#ffffff', '#b4975a'];
+    const colors = ['#c5a059', '#e6be8a', '#d4af37', '#fffdf5', '#b4975a'];
     const newPetals = Array.from({ length: 30 }).map((_, i) => ({
       id: i,
       x: Math.random() * 100,

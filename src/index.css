@@ -6,14 +6,14 @@
   --font-sans: "Inter", sans-serif;
   --font-display: "Cormorant Garamond", serif;
 
-  --color-brand-pink: #f0f2f5;
-  --color-brand-blush: #dce1e9;
-  --color-brand-sakura: #a2aec4;
-  --color-brand-sakura-deep: #7382a0;
-  --color-brand-gold: #b4975a;
-  --color-brand-gold-light: #d4af37;
-  --color-brand-champagne: #dae1eb;
-  --color-brand-ivory: #e9eff5;
+  --color-brand-gold: #c5a059;
+  --color-brand-gold-light: #e6be8a;
+  --color-brand-gold-deep: #937331;
+  --color-brand-gold-muted: #b4975a;
+  --color-brand-champagne: #f7e7ce;
+  --color-brand-ivory: #fffdf5;
+  --color-brand-accent: #d4af37;
+  --color-brand-dark: #4d3e1e;
 }
 
 @layer base {
@@ -37,12 +37,12 @@
     @apply bg-white/40 backdrop-blur-md border border-white/20 shadow-xl;
   }
 
-  .text-gradient-sakura {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-sakura-deep via-brand-sakura to-brand-sakura-deep;
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-gold-deep via-brand-gold to-brand-gold-deep;
   }
 
-  .border-sakura {
-    @apply border border-brand-sakura/30;
+  .border-gold {
+    @apply border border-brand-gold/30;
   }
 
   .perspective-1000 {
@@ -51,10 +51,10 @@
 }
 
 .wax-seal {
-  background: radial-gradient(circle at 30% 30%, #a2aec4, #7382a0, #53617e);
+  background: radial-gradient(circle at 30% 30%, #d4af37, #b4975a, #856404);
   box-shadow:
-    0 8px 25px rgba(115, 130, 160, 0.4),
-    inset -3px -3px 8px rgba(60, 74, 102, 0.3),
+    0 8px 25px rgba(133, 100, 4, 0.4),
+    inset -3px -3px 8px rgba(77, 62, 30, 0.3),
     inset 3px 3px 8px rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
@@ -75,10 +75,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-brand-blush);
+  background: var(--color-brand-gold-light);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-brand-sakura-deep);
+  background: var(--color-brand-gold-deep);
 }
