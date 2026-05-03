@@ -6,7 +6,7 @@ export const CoupleDetails: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
       {/* Decorative ambient background */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-radial from-brand-gold/15 to-transparent rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-radial from-brand-pink/15 to-transparent rounded-full blur-[100px] pointer-events-none" />
 
       <div className="text-center mb-16 sm:mb-24 relative z-10">
         <motion.div
@@ -21,7 +21,7 @@ export const CoupleDetails: React.FC = () => {
             <div className="w-12 sm:w-20 h-[1px] bg-gradient-to-l from-transparent to-brand-gold-deep/60" />
           </div>
           <h2 className="text-5xl sm:text-7xl font-display text-stone-800 tracking-tight drop-shadow-sm">
-            Kavini <span className="italic text-brand-gold-deep font-light mx-2">&</span> Dasun
+            Sanduni <span className="italic text-brand-gold-deep font-light mx-2">&</span> Sanjaya
           </h2>
         </motion.div>
       </div>
@@ -37,11 +37,11 @@ export const CoupleDetails: React.FC = () => {
         >
           <div className="mb-4 flex flex-col items-center lg:items-end">
             <span className="text-brand-gold-deep uppercase tracking-[0.4em] text-[10px] font-bold mb-3 block">The Groom</span>
-            <h3 className="text-4xl sm:text-5xl font-display text-stone-800 mb-2 drop-shadow-sm">Dasun</h3>
+            <h3 className="text-4xl sm:text-5xl font-display text-stone-800 mb-2 drop-shadow-sm">Sanjaya</h3>
             <p className="text-stone-500/90 font-serif italic text-base sm:text-lg">Son of Mr. & Mrs. Perera</p>
           </div>
           <div className="hidden lg:flex justify-end mt-8">
-            <Heart className="w-6 h-6 text-brand-gold/60 fill-brand-gold/20 transform hover:scale-110 transition-transform cursor-pointer" />
+            <Heart className="w-6 h-6 text-brand-pink/80 fill-brand-pink/30 transform hover:scale-110 transition-transform cursor-pointer drop-shadow-sm" />
           </div>
         </motion.div>
 
@@ -54,16 +54,16 @@ export const CoupleDetails: React.FC = () => {
           className="relative px-4 sm:px-0 order-1 lg:order-2 flex-shrink-0 group"
         >
           {/* Glowing border effect */}
-          <div className="absolute -inset-2 bg-gradient-to-b from-brand-gold-deep/30 to-transparent rounded-[12rem_12rem_1rem_1rem] blur-xl opacity-60 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+          <div className="absolute -inset-2 bg-gradient-to-b from-brand-pink/30 to-transparent rounded-[12rem_12rem_1rem_1rem] blur-xl opacity-60 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
 
           <div className="relative w-[300px] h-[400px] sm:w-[360px] sm:h-[500px] lg:w-[420px] lg:h-[580px] rounded-[12rem_12rem_16px_16px] overflow-hidden border-[6px] border-white/90 shadow-[0_20px_50px_rgba(197,160,89,0.2)] bg-brand-champagne mx-auto z-10 transition-transform duration-700 group-hover:-translate-y-2">
             <img
-              src="/11.jpg"
+              src="/pre/gallery-1.jpg"
               onError={(e) => {
                 e.currentTarget.src = "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=800&h=1000";
                 e.currentTarget.onerror = null;
               }}
-              alt="Kavini and Dasun"
+              alt="Sanduni and Sanjaya"
               className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
             />
             {/* Elegant inner shadow & overlay */}
@@ -91,11 +91,11 @@ export const CoupleDetails: React.FC = () => {
         >
           <div className="mb-4 flex flex-col items-center lg:items-start">
             <span className="text-brand-gold-deep uppercase tracking-[0.4em] text-[10px] font-bold mb-3 block">The Bride</span>
-            <h3 className="text-4xl sm:text-5xl font-display text-stone-800 mb-2 drop-shadow-sm">Kavini</h3>
+            <h3 className="text-4xl sm:text-5xl font-display text-stone-800 mb-2 drop-shadow-sm">Sanduni</h3>
             <p className="text-stone-500/90 font-serif italic text-base sm:text-lg">Daughter of Mr. & Mrs. Silva</p>
           </div>
           <div className="hidden lg:flex justify-start mt-8">
-            <Heart className="w-6 h-6 text-brand-gold/60 fill-brand-gold/20 transform hover:scale-110 transition-transform cursor-pointer" />
+            <Heart className="w-6 h-6 text-brand-pink/80 fill-brand-pink/30 transform hover:scale-110 transition-transform cursor-pointer drop-shadow-sm" />
           </div>
         </motion.div>
       </div>

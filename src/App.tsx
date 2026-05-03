@@ -13,6 +13,7 @@ import { RSVPForm } from './components/RSVPForm';
 import { Footer } from './components/Footer';
 import { IntroVideo } from './components/IntroVideo';
 import { HeroContent } from './components/HeroContent';
+import { CornerFlowers } from './components/CornerFlowers';
 
 export default function App() {
   const [showIntro, setShowIntro] = useState(true);
@@ -78,6 +79,8 @@ export default function App() {
             <HeroContent />
 
             <section id="countdown" className="py-16 sm:py-32 relative overflow-hidden bg-gradient-to-br from-brand-champagne via-brand-ivory to-brand-champagne">
+              <CornerFlowers position="top-left" opacity={0.7} scale={1.2} />
+              <CornerFlowers position="bottom-right" opacity={0.7} scale={1.2} />
               {/* Premium Background Ambient Glows */}
               <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
                 <div className="absolute -top-[20%] -right-[10%] w-[50%] h-[70%] bg-brand-gold-light/20 blur-[120px] rounded-full" />
@@ -104,11 +107,14 @@ export default function App() {
             </section>
 
             <section id="couple" className="py-16 sm:py-32 bg-gradient-to-b from-brand-ivory to-brand-champagne relative overflow-hidden">
+              <CornerFlowers position="top-right" opacity={0.6} scale={1.5} />
+              <CornerFlowers position="bottom-left" opacity={0.6} scale={1.5} />
               <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03] pointer-events-none" />
               <CoupleDetails />
             </section>
 
-            <section id="ceremony" className="py-16 sm:py-32 bg-brand-champagne/40 relative">
+            <section id="ceremony" className="py-16 sm:py-32 bg-brand-champagne/40 relative overflow-hidden">
+              <CornerFlowers position="all" opacity={0.6} scale={1.3} />
               <div className="absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-brand-gold-deep/20 to-transparent" />
               <CeremonyDetails />
             </section>
@@ -116,16 +122,20 @@ export default function App() {
             {/* Timeline section removed entirely as requested */}
 
             <section id="gallery" className="py-16 sm:py-32 bg-gradient-to-b from-brand-ivory via-brand-champagne/40 to-brand-ivory relative overflow-hidden">
+              <CornerFlowers position="top-left" opacity={0.6} scale={1.4} />
+              <CornerFlowers position="bottom-right" opacity={0.6} scale={1.4} />
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[1px] bg-brand-gold-deep/10" />
               <Gallery />
             </section>
 
-            <section id="location" className="py-16 sm:py-32 bg-gradient-to-b from-brand-champagne/20 to-brand-ivory relative">
+            <section id="location" className="py-16 sm:py-32 bg-gradient-to-b from-brand-champagne/20 to-brand-ivory relative overflow-hidden">
+              <CornerFlowers position="bottom-left" opacity={0.6} scale={1.2} />
               <div className="absolute -top-[10%] -right-[5%] w-[40%] h-[60%] bg-brand-gold/20 blur-[100px] rounded-full pointer-events-none" />
               <Location />
             </section>
 
-            <section id="rsvp" className="py-16 sm:py-32 bg-brand-ivory relative">
+            <section id="rsvp" className="py-16 sm:py-32 bg-brand-ivory relative overflow-hidden">
+              <CornerFlowers position="top-right" opacity={0.6} scale={1.6} />
               <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/natural-paper.png')] opacity-20 pointer-events-none" />
               <RSVPForm />
             </section>

@@ -54,7 +54,7 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
                 Royal Invitation
               </h2>
               <h1 className="relative text-6xl sm:text-[9rem] font-display text-white tracking-widest mb-4 drop-shadow-[0_10px_40px_rgba(0,0,0,0.5)]">
-                KAVINI <span className="text-brand-gold-light italic font-light">&</span> DASUN
+                SANDUNI <span className="text-brand-gold-light italic font-light">&</span> SANJAYA
               </h1>
               <div className="w-32 h-[1.5px] bg-gradient-to-r from-transparent via-brand-gold to-transparent mx-auto mt-10 shadow-[0_0_15px_rgba(212,175,55,0.5)]" />
             </motion.div>

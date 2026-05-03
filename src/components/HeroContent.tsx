@@ -1,19 +1,21 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Sparkles, Heart } from 'lucide-react';
+import { CornerFlowers } from './CornerFlowers';
 
 export const HeroContent: React.FC = () => {
   return (
     <section className="relative min-h-screen py-24 sm:py-32 flex items-center justify-center overflow-hidden">
+      <CornerFlowers position="all" opacity={0.8} scale={1.8} />
       {/* Background Image with Elegant Overlays */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/12.jpg"
+          src="/pre/gallery-2.jpg"
           alt="Background"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-brand-ivory/80 backdrop-blur-[2px]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-ivory/40 via-transparent to-brand-ivory/60" />
+        <div className="absolute inset-0 bg-brand-ivory/70 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-pink/20 via-transparent to-brand-pink/10" />
         <div className="absolute inset-0 bg-brand-gold/5 mix-blend-multiply" />
       </div>
 
@@ -28,7 +30,7 @@ export const HeroContent: React.FC = () => {
           {/* Subtle top decoration */}
           <div className="flex items-center gap-3 mb-8">
             <div className="h-[1px] w-12 sm:w-20 bg-gradient-to-l from-brand-gold-deep/60 to-transparent" />
-            <Heart className="w-5 h-5 text-brand-gold-deep/70 fill-brand-gold/20" />
+            <Heart className="w-5 h-5 text-brand-pink fill-brand-pink/40 drop-shadow-sm" />
             <div className="h-[1px] w-12 sm:w-20 bg-gradient-to-r from-brand-gold-deep/60 to-transparent" />
           </div>
 
@@ -38,10 +40,10 @@ export const HeroContent: React.FC = () => {
 
           <div className="relative mb-12 w-full flex justify-center">
             <h1 className="relative text-6xl sm:text-8xl lg:text-9xl font-display text-stone-800 leading-tight drop-shadow-sm">
-              Kavini <br className="sm:hidden" />
+              Sanduni <br className="sm:hidden" />
               <span className="text-brand-gold-deep italic font-light mx-4 sm:mx-8 text-5xl sm:text-7xl lg:text-8xl inline-block -translate-y-2 sm:-translate-y-4">&</span>
               <br className="sm:hidden" />
-              Dasun
+              Sanjaya
             </h1>
           </div>
 

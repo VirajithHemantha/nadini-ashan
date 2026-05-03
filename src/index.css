@@ -6,14 +6,16 @@
   --font-sans: "Inter", sans-serif;
   --font-display: "Cormorant Garamond", serif;
 
-  --color-brand-gold: #c5a059;
-  --color-brand-gold-light: #e6be8a;
-  --color-brand-gold-deep: #937331;
-  --color-brand-gold-muted: #b4975a;
-  --color-brand-champagne: #f7e7ce;
-  --color-brand-ivory: #fffdf5;
-  --color-brand-accent: #d4af37;
-  --color-brand-dark: #4d3e1e;
+  --color-brand-gold: #D4AF37; /* Champagne Gold */
+  --color-brand-gold-light: #E7D2A3;
+  --color-brand-gold-deep: #B8860B;
+  --color-brand-gold-muted: #C5B358;
+  --color-brand-champagne: #F7E7CE;
+  --color-brand-ivory: #FFFBF2;
+  --color-brand-pink: #FADADD; /* Blush Pink */
+  --color-brand-white: #FAFAFA; /* Soft White */
+  --color-brand-accent: #D4AF37;
+  --color-brand-dark: #4D3E1E;
 }
 
 @layer base {

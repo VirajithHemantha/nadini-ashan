@@ -3,10 +3,12 @@ import { motion, AnimatePresence } from 'motion/react';
 import { X, ZoomIn } from 'lucide-react';
 
 const images = [
-  { id: 1, url: '/11.jpg', fallback: 'https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=800&auto=format&fit=crop', title: 'The Beginning' },
-  { id: 2, url: '/12.jpg', fallback: 'https://images.unsplash.com/photo-1522673607200-164d1f624698?q=80&w=800&auto=format&fit=crop', title: 'Our Journey' },
-  { id: 3, url: '/13.jpg', fallback: 'https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=800&auto=format&fit=crop', title: 'A Thousand Words' },
-  { id: 4, url: '/14.jpg', fallback: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=800&auto=format&fit=crop', title: 'Endless Love' },
+  { id: 1, url: '/pre/gallery-1.jpg', fallback: 'https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=800&auto=format&fit=crop', title: 'The Beginning' },
+  { id: 2, url: '/pre/gallery-2.jpg', fallback: 'https://images.unsplash.com/photo-1522673607200-164d1f624698?q=80&w=800&auto=format&fit=crop', title: 'Our Journey' },
+  { id: 3, url: '/pre/gallery-3.jpg', fallback: 'https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=800&auto=format&fit=crop', title: 'A Thousand Words' },
+  { id: 4, url: '/pre/gallery-4.jpg', fallback: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=800&auto=format&fit=crop', title: 'Endless Love' },
+  { id: 5, url: '/pre/gallery-5.jpg', fallback: 'https://images.unsplash.com/photo-1519225421980-715cb02151ff?q=80&w=800&auto=format&fit=crop', title: 'Forever Together' },
+  { id: 6, url: '/pre/gallery-6.jpg', fallback: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=800&auto=format&fit=crop', title: 'Love Always' },
 ];
 
 export const Gallery: React.FC = () => {
@@ -26,7 +28,7 @@ export const Gallery: React.FC = () => {
           .animate-marquee {
             display: flex;
             width: max-content;
-            animation: slide-left 40s linear infinite;
+            animation: slide-left 20s linear infinite;
           }
           .animate-marquee:hover {
             animation-play-state: paused;
