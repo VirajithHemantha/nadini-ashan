@@ -6,16 +6,21 @@
   --font-sans: "Inter", sans-serif;
   --font-display: "Cormorant Garamond", serif;
 
-  --color-brand-gold: #D4AF37; /* Champagne Gold */
-  --color-brand-gold-light: #E7D2A3;
+  --color-brand-gold: #D4AF37;
+  --color-brand-gold-light: #F9E27D;
   --color-brand-gold-deep: #B8860B;
-  --color-brand-gold-muted: #C5B358;
-  --color-brand-champagne: #F7E7CE;
-  --color-brand-ivory: #FFFBF2;
-  --color-brand-pink: #FADADD; /* Blush Pink */
-  --color-brand-white: #FAFAFA; /* Soft White */
-  --color-brand-accent: #D4AF37;
-  --color-brand-dark: #4D3E1E;
+  
+  --color-brand-emerald: #065F46; /* Emerald 800 */
+  --color-brand-emerald-light: #10B981; /* Emerald 500 */
+  --color-brand-emerald-deep: #064E3B; /* Emerald 900 */
+  --color-brand-emerald-muted: #34D399; /* Emerald 400 */
+  
+  --color-brand-champagne: #F0FDF4; /* Light Mint */
+  --color-brand-ivory: #F8FAF7; /* Soft Green-Ivory */
+  --color-brand-pink: #991B1B; /* Changed to Deep Red for petals/accents */
+  --color-brand-white: #FAFAFA;
+  --color-brand-accent: #059669; /* Emerald 600 */
+  --color-brand-dark: #064E3B;
 }
 
 @layer base {
@@ -53,10 +58,10 @@
 }
 
 .wax-seal {
-  background: radial-gradient(circle at 30% 30%, #d4af37, #b4975a, #856404);
+  background: radial-gradient(circle at 30% 30%, #10B981, #059669, #064E3B);
   box-shadow:
-    0 8px 25px rgba(133, 100, 4, 0.4),
-    inset -3px -3px 8px rgba(77, 62, 30, 0.3),
+    0 8px 25px rgba(6, 78, 59, 0.4),
+    inset -3px -3px 8px rgba(6, 78, 59, 0.3),
     inset 3px 3px 8px rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
@@ -77,10 +82,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-brand-gold-light);
+  background: var(--color-brand-emerald-muted);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-brand-gold-deep);
+  background: var(--color-brand-emerald);
 }

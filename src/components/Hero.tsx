@@ -25,8 +25,56 @@ export const Hero: React.FC = () => {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="/Rose_petals_falling_live_video_202605011352.mp4" type="video/mp4" />
+          <source src="/Garden_viewed_through_stone_archway_202605041339.mp4" type="video/mp4" />
         </video>
+        {/* Subtle Dark Overlay to balance visibility and readability */}
+        <div className="absolute inset-0 bg-black/30" />
+      </motion.div>
+
+      {/* Central Content with Highlight Background */}
+      <motion.div
+        className="relative z-10 text-center px-6"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1, duration: 1.5 }}
+      >
+        <div className="relative inline-block px-8 py-10 sm:px-16 sm:py-16 bg-white/5 backdrop-blur-[4px] rounded-[3rem] border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.3)]">
+          <motion.span 
+            className="text-[10px] sm:text-xs uppercase tracking-[0.8em] text-white font-bold mb-6 block drop-shadow-[0_4px_12px_rgba(0,0,0,1)]"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.5, duration: 1 }}
+          >
+            Save the Date
+          </motion.span>
+          <h1 className="text-white text-4xl sm:text-7xl font-display tracking-widest drop-shadow-[0_10px_30px_rgba(0,0,0,1)] mb-4">
+            <span className="bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-emerald-100">GAGANI</span>
+            <span className="italic font-light text-brand-emerald-muted mx-4 sm:mx-6 drop-shadow-[0_0_15px_rgba(16,185,129,0.5)]">&</span>
+            <span className="bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-emerald-100">RIDMA</span>
+          </h1>
+          <motion.div 
+            className="w-24 h-[1.5px] bg-gradient-to-r from-transparent via-brand-emerald-light to-transparent mx-auto mt-4 mb-8 shadow-[0_0_20px_rgba(16,185,129,0.8)]"
+            initial={{ width: 0 }}
+            animate={{ width: 96 }}
+            transition={{ delay: 2, duration: 1 }}
+          />
+          <motion.p
+            className="text-white font-serif italic text-lg sm:text-xl tracking-[0.2em] drop-shadow-[0_8px_16px_rgba(0,0,0,1)]"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 2.2, duration: 1 }}
+          >
+            20 . 08 . 2026
+          </motion.p>
+          <motion.span
+            className="text-[9px] sm:text-[10px] uppercase tracking-[0.4em] text-white/90 font-medium mt-10 block drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 2.5, duration: 1 }}
+          >
+            Waters Edge • Battaramulla
+          </motion.span>
+        </div>
       </motion.div>
 
       {/* Persistent subtle falling petals in background */}
@@ -42,8 +90,8 @@ export const Hero: React.FC = () => {
         transition={{ delay: 2.5, duration: 1 }}
         whileHover={{ scale: 1.1 }}
       >
-        <span className="text-[9px] sm:text-[10px] font-sans uppercase tracking-[0.4em] text-stone-500 font-semibold drop-shadow-md">Discover</span>
-        <div className="w-[1px] h-12 sm:h-20 bg-gradient-to-b from-brand-gold-deep/60 to-transparent animate-bounce" />
+        <span className="text-[9px] sm:text-[10px] font-sans uppercase tracking-[0.4em] text-emerald-100 font-semibold drop-shadow-md">Discover</span>
+        <div className="w-[1px] h-12 sm:h-20 bg-gradient-to-b from-brand-emerald/60 to-transparent animate-bounce" />
       </motion.div>
 
     </div>

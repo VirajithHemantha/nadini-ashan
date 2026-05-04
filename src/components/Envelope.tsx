@@ -66,7 +66,7 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
               <div className="absolute inset-2 border-[1.5px] border-[#d4af37]/60 rounded-t-[3.5rem] sm:rounded-t-[5.5rem] pointer-events-none" />
               <div className="absolute inset-3 border-[1px] border-[#7382a0]/20 rounded-t-[3.2rem] sm:rounded-t-[5.2rem] pointer-events-none" />
 
-              <div className="absolute top-0 right-0 left-0 h-28 opacity-10 mix-blend-multiply" style={{ backgroundImage: "url('/images/kandyan-border.png')", backgroundSize: "contain", backgroundRepeat: "repeat-x" }} />
+              {/* Kandyan border removed */}
 
               <motion.div
                 initial={{ opacity: 0 }}
@@ -74,14 +74,14 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
                 transition={{ delay: 2.8, duration: 1.5 }}
                 className="relative z-10 w-full px-4 flex flex-col items-center h-full"
               >
-                <div className="w-12 h-12 sm:w-20 sm:h-20 mb-3 sm:mb-4 flex items-center justify-center mix-blend-multiply opacity-90 drop-shadow-sm">
-                  <img src="/images/punkalasa.png" alt="Punkalasa" className="w-full h-full object-contain" style={{ filter: "sepia(1) hue-rotate(320deg) saturate(2) brightness(0.9)" }} />
+                <div className="w-12 h-12 sm:w-20 sm:h-20 mb-3 sm:mb-4 flex items-center justify-center mix-blend-multiply opacity-90 drop-shadow-sm border border-brand-gold/20 rounded-full">
+                  <Heart className="w-6 h-6 text-brand-gold-deep" />
                 </div>
 
                 <h2 className="text-3xl sm:text-5xl font-display font-medium text-[#4a5770] tracking-tight leading-[1.1] mb-2 sm:mb-3 drop-shadow-sm">
-                  Sanduni <br />
+                  Gagani <br />
                   <span className="text-xl sm:text-3xl text-[#d4af37] italic font-light my-1 block">&</span>
-                  Sanjaya
+                  Ridma
                 </h2>
 
                 <div className="w-16 sm:w-24 h-[2px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto my-3 sm:my-5" />
@@ -96,7 +96,7 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
 
               {/* Subtle temple mural watermark inside */}
               <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-[#d4af37]/10 rounded-full blur-3xl pointer-events-none" />
-              <div className="absolute bottom-4 opacity-10 w-full h-16 mix-blend-multiply" style={{ backgroundImage: "url('/images/kandyan-border.png')", backgroundSize: "contain", backgroundRepeat: "repeat-x" }} />
+              <div className="absolute bottom-4 opacity-10 w-full h-16 mix-blend-multiply" />
             </motion.div>
 
             {/* Envelope Flap (Top) */}
@@ -128,7 +128,7 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
               >
                 <div className="w-full h-full bg-gradient-to-t from-[#d4af37] to-[#8b6b15] border-t-2 border-[#53617e]" style={{ clipPath: 'polygon(0 0, 100% 0, 50% 100%)' }}>
                   {/* Kandyan floral pattern lining */}
-                  <div className="absolute inset-0 opacity-25 mix-blend-multiply" style={{ backgroundImage: "url('/images/kandyan-border.png')", backgroundSize: "cover", backgroundPosition: "center" }} />
+                  {/* Kandyan floral pattern lining removed */}
                   <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/paper.png')] mix-blend-overlay opacity-40" />
                   {/* Inner Trim */}
                   <div className="absolute bottom-0 left-0 w-full h-full border-b-[3px] border-r-[3px] border-[#53617e]/50 transform rotate-45 translate-y-1/2 scale-140" />
@@ -167,7 +167,7 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
               animate={isOpened ? { opacity: 0, scale: 1.05 } : {}}
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
-              <div className="absolute inset-0 opacity-40 mix-blend-multiply" style={{ backgroundImage: "url('/images/kandyan-border.png')", backgroundSize: "contain", backgroundRepeat: "repeat-x", backgroundPosition: "center" }} />
+              <div className="absolute inset-0 opacity-40 mix-blend-multiply" />
               <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/brushed-alum.png')] mix-blend-overlay opacity-50" />
             </motion.div>
 
@@ -188,8 +188,8 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
                     exit: { duration: 0.5, ease: "easeIn" }
                   }}
                 >
-                  {/* Wax base with blue realism */}
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#99a4bc] via-[#7382a0] to-[#53617e] border border-[#3c4a66] shadow-[inset_0_4px_10px_rgba(153,164,188,0.8),inset_0_-4px_15px_rgba(10,20,50,0.9)]" />
+                  {/* Wax base with emerald realism */}
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-brand-emerald-muted via-brand-emerald to-brand-emerald-deep border border-brand-emerald-deep shadow-[inset_0_4px_10px_rgba(16,185,129,0.8),inset_0_-4px_15px_rgba(6,78,59,0.9)]" />
 
                   {/* Wax ridge ring - Gold infused edge */}
                   <div className="absolute inset-2 sm:inset-3 rounded-full border-[3px] border-[#d4af37]/60 shadow-[inset_0_2px_5px_rgba(50,0,10,0.8),0_2px_4px_rgba(212,175,55,0.4)] mix-blend-screen" />
@@ -199,13 +199,13 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
 
                   <div className="relative flex flex-col items-center justify-center translate-y-[-2px]">
                     <span className="text-[#d4af37] font-serif text-3xl sm:text-4xl italic tracking-tighter drop-shadow-[0_2px_4px_rgba(50,0,10,0.9)]">
-                      S
+                      G
                     </span>
                     <span className="text-[#d4af37]/70 font-serif text-sm sm:text-base mx-0.5 font-light drop-shadow-[0_2px_4px_rgba(50,0,10,0.9)] my-[-6px]">
                       &
                     </span>
                     <span className="text-[#d4af37] font-serif text-3xl sm:text-4xl italic tracking-tighter drop-shadow-[0_2px_4px_rgba(50,0,10,0.9)]">
-                      S
+                      R
                     </span>
                   </div>
 

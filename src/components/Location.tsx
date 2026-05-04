@@ -3,14 +3,14 @@ import { motion } from 'motion/react';
 import { MapPin, Navigation, Compass, Map } from 'lucide-react';
 
 export const Location: React.FC = () => {
-   const venueAddress = "Marino Beach Colombo, Sri Lanka";
-  const mapUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9168925435!2d79.8519441!3d6.8993889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259427b372605%3A0x7d013f9c6d36e2f1!2sMarino%20Beach%20Colombo!5e0!3m2!1sen!2slk!4v1714734892348!5m2!1sen!2slk`;
-  const liveLocationUrl = "https://maps.app.goo.gl/kDgnopLnmwgrkGju5";
+   const venueAddress = "Waters Edge, Battaramulla";
+  const mapUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8443924765634!2d79.9168925!3d6.9056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2597405e3e60d%3A0xc07a81080344d183!2sWaters%20Edge!5e0!3m2!1sen!2slk!4v1714736345678!5m2!1sen!2slk`;
+  const liveLocationUrl = "https://maps.app.goo.gl/uXpD3Bf4s4FmS8yJ6";
 
   return (
     <div className="max-w-[85rem] mx-auto px-6 relative py-12">
       {/* Decorative Glows */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-radial from-brand-gold/20 to-transparent blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-radial from-brand-emerald/20 to-transparent blur-3xl pointer-events-none -z-10" />
 
       <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-0 mt-10">
 
@@ -22,33 +22,33 @@ export const Location: React.FC = () => {
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="w-full lg:w-[45%] z-20"
         >
-          <div className="bg-white/90 backdrop-blur-2xl p-10 sm:p-14 lg:p-16 rounded-[2.5rem] shadow-[0_30px_60px_rgba(197,160,89,0.15)] border border-brand-gold/30 lg:translate-x-12 relative overflow-hidden group">
+          <div className="bg-[#064E3B]/90 backdrop-blur-2xl p-10 sm:p-14 lg:p-16 rounded-[2.5rem] shadow-[0_30px_60px_rgba(0,0,0,0.3)] border border-brand-emerald-light/30 lg:translate-x-12 relative overflow-hidden group">
 
             {/* Elegant top border gradient */}
-            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-brand-champagne via-brand-gold to-brand-gold-deep" />
+            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-brand-emerald-muted via-brand-emerald to-brand-emerald-deep" />
 
             <div className="mb-10 relative z-10">
               <div className="inline-flex items-center gap-4 mb-6">
-                <span className="text-brand-gold-deep uppercase tracking-[0.5em] text-[10px] sm:text-[11px] font-bold drop-shadow-sm">
+                <span className="text-brand-emerald-light uppercase tracking-[0.5em] text-[10px] sm:text-[11px] font-bold drop-shadow-sm">
                   The Venue
                 </span>
-                <div className="w-16 h-[1px] bg-gradient-to-r from-brand-gold-deep/60 to-transparent" />
+                <div className="w-16 h-[1px] bg-gradient-to-r from-brand-emerald-light/60 to-transparent" />
               </div>
 
-              <h2 className="text-5xl sm:text-6xl font-display text-stone-800 mb-6 leading-tight drop-shadow-sm">
+              <h2 className="text-5xl sm:text-6xl font-display text-white mb-6 leading-tight drop-shadow-sm">
                 Where We <br />
-                <span className="italic font-light text-brand-gold-deep">Celebrate</span>
+                <span className="italic font-light text-brand-emerald-light">Celebrate</span>
               </h2>
 
               <div className="flex items-start gap-5 mt-10">
-                <div className="w-12 h-12 bg-stone-50 rounded-full border border-brand-gold/40 shadow-inner flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-500">
-                  <MapPin className="text-brand-gold-deep w-5 h-5" />
+                <div className="w-12 h-12 bg-emerald-900/40 rounded-full border border-brand-emerald-light/40 shadow-inner flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-500">
+                  <MapPin className="text-brand-emerald-light w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-2xl font-serif text-stone-800 mb-1">Marino Beach Colombo</p>
-                  <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-stone-400 leading-relaxed mb-6">Colombo 03, Sri Lanka</p>
+                  <p className="text-2xl font-serif text-white mb-1">Waters Edge</p>
+                  <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-emerald-100/60 leading-relaxed mb-6">Battaramulla, Sri Lanka</p>
 
-                  <p className="text-stone-500/90 italic font-serif text-lg leading-relaxed max-w-sm mb-10 pl-4 border-l-[1.5px] border-brand-gold/40">
+                  <p className="text-emerald-100/80 italic font-serif text-lg leading-relaxed max-w-sm mb-10 pl-4 border-l-[1.5px] border-brand-emerald-light/40">
                     "A serene and elegant setting where we will begin our new chapter together."
                   </p>
 
@@ -56,9 +56,9 @@ export const Location: React.FC = () => {
                     href={liveLocationUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-3 bg-stone-800 text-brand-champagne px-8 py-4 rounded-full font-sans tracking-[0.2em] text-xs uppercase hover:bg-stone-900 hover:shadow-[0_10px_20px_rgba(0,0,0,0.2)] transition-all duration-300 active:scale-95 group/btn"
+                    className="inline-flex items-center gap-3 bg-white text-emerald-900 px-8 py-4 rounded-full font-sans tracking-[0.2em] text-xs uppercase hover:bg-emerald-50 hover:shadow-[0_10px_20px_rgba(0,0,0,0.4)] transition-all duration-300 active:scale-95 group/btn"
                   >
-                    <Navigation className="w-4 h-4 text-brand-gold group-hover/btn:rotate-45 transition-transform duration-300" />
+                    <Navigation className="w-4 h-4 text-brand-emerald group-hover/btn:rotate-45 transition-transform duration-300" />
                     Open Live Location
                   </a>
                 </div>

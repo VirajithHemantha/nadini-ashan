@@ -16,8 +16,8 @@ export const FloatingPetals: React.FC = () => {
   const [petals, setPetals] = useState<Petal[]>([]);
 
   useEffect(() => {
-    const colors = ['#D4AF37', '#FFD700', '#F9E27D', '#E7D2A3', '#B8860B'];
-    const newPetals = Array.from({ length: 60 }).map((_, i) => ({
+    const colors = ['#991B1B', '#B91C1C', '#DC2626', '#EF4444', '#7F1D1D'];
+    const newPetals = Array.from({ length: 25 }).map((_, i) => ({
       id: i,
       x: Math.random() * 100,
       size: Math.random() * 15 + 15,
@@ -62,7 +62,7 @@ export const FloatingPetals: React.FC = () => {
             viewBox="0 0 24 24"
             fill="currentColor"
             className="drop-shadow-sm"
-            style={{ filter: 'brightness(1.2) saturate(1.5) drop-shadow(0 0 8px rgba(212, 175, 55, 0.6))' }}
+            style={{ filter: 'brightness(1.1) saturate(1.2) drop-shadow(0 0 10px rgba(153, 27, 27, 0.5))' }}
           >
             <path d="M12,2C12,2 10,6 10,10C10,14 12,22 12,22C12,22 14,14 14,10C14,6 12,2 12,2Z" />
           </svg>

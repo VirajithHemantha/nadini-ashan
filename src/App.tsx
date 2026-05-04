@@ -7,7 +7,7 @@ import { Countdown } from './components/Countdown';
 import { CeremonyDetails } from './components/CeremonyDetails';
 import { CoupleDetails } from './components/CoupleDetails';
 // Removed Timeline import
-import { Gallery } from './components/Gallery';
+// Removed Gallery import
 import { Location } from './components/Location';
 import { RSVPForm } from './components/RSVPForm';
 import { Footer } from './components/Footer';
@@ -78,27 +78,27 @@ export default function App() {
 
             <HeroContent />
 
-            <section id="countdown" className="py-16 sm:py-32 relative overflow-hidden bg-gradient-to-br from-brand-champagne via-brand-ivory to-brand-champagne">
-              <CornerFlowers position="top-left" opacity={0.7} scale={1.2} />
-              <CornerFlowers position="bottom-right" opacity={0.7} scale={1.2} />
+            <section id="countdown" className="py-16 sm:py-32 relative overflow-hidden bg-gradient-to-br from-[#064E3B] via-[#065F46] to-[#022C22]">
+              <CornerFlowers position="top-left" opacity={0.4} scale={1.2} />
+              <CornerFlowers position="bottom-right" opacity={0.4} scale={1.2} />
               {/* Premium Background Ambient Glows */}
               <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
-                <div className="absolute -top-[20%] -right-[10%] w-[50%] h-[70%] bg-brand-gold-light/20 blur-[120px] rounded-full" />
-                <div className="absolute -bottom-[20%] -left-[10%] w-[50%] h-[70%] bg-brand-gold-deep/10 blur-[120px] rounded-full" />
+                <div className="absolute -top-[20%] -right-[10%] w-[50%] h-[70%] bg-white/5 blur-[120px] rounded-full" />
+                <div className="absolute -bottom-[20%] -left-[10%] w-[50%] h-[70%] bg-brand-emerald-light/10 blur-[120px] rounded-full" />
               </div>
               
               <div className="relative z-10 max-w-5xl mx-auto px-6 flex flex-col items-center text-center">
                 <div className="inline-flex items-center gap-4 mb-6">
-                  <div className="w-12 h-[1px] bg-gradient-to-r from-transparent to-brand-gold-deep/60" />
-                  <span className="text-brand-gold-deep uppercase tracking-[0.5em] text-[11px] font-semibold font-sans drop-shadow-sm">The Final Countdown</span>
-                  <div className="w-12 h-[1px] bg-gradient-to-l from-transparent to-brand-gold-deep/60" />
+                  <div className="w-12 h-[1px] bg-gradient-to-r from-transparent to-brand-emerald-light/60" />
+                  <span className="text-brand-emerald-light uppercase tracking-[0.5em] text-[11px] font-semibold font-sans drop-shadow-sm">The Final Countdown</span>
+                  <div className="w-12 h-[1px] bg-gradient-to-l from-transparent to-brand-emerald-light/60" />
                 </div>
                 
-                <h2 className="text-5xl sm:text-7xl font-display text-stone-800 tracking-tight mb-6 drop-shadow-sm">
-                  Until We Say <span className="italic text-brand-gold-deep font-light">"I Do"</span>
+                <h2 className="text-5xl sm:text-7xl font-display text-white tracking-tight mb-6 drop-shadow-sm">
+                  Until We Say <span className="italic text-brand-emerald-light font-light">"I Do"</span>
                 </h2>
                 
-                <p className="text-lg sm:text-xl font-serif italic text-stone-600/80 mb-12 sm:mb-16 max-w-2xl text-center leading-relaxed">
+                <p className="text-lg sm:text-xl font-serif italic text-emerald-100/80 mb-12 sm:mb-16 max-w-2xl text-center leading-relaxed">
                   Time is standing still as we eagerly await the moment our forever begins.
                 </p>
 
@@ -121,16 +121,11 @@ export default function App() {
 
             {/* Timeline section removed entirely as requested */}
 
-            <section id="gallery" className="py-16 sm:py-32 bg-gradient-to-b from-brand-ivory via-brand-champagne/40 to-brand-ivory relative overflow-hidden">
-              <CornerFlowers position="top-left" opacity={0.6} scale={1.4} />
-              <CornerFlowers position="bottom-right" opacity={0.6} scale={1.4} />
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[1px] bg-brand-gold-deep/10" />
-              <Gallery />
-            </section>
+            {/* Gallery section removed */}
 
-            <section id="location" className="py-16 sm:py-32 bg-gradient-to-b from-brand-champagne/20 to-brand-ivory relative overflow-hidden">
-              <CornerFlowers position="bottom-left" opacity={0.6} scale={1.2} />
-              <div className="absolute -top-[10%] -right-[5%] w-[40%] h-[60%] bg-brand-gold/20 blur-[100px] rounded-full pointer-events-none" />
+            <section id="location" className="py-16 sm:py-32 bg-gradient-to-br from-[#064E3B] to-[#022C22] relative overflow-hidden">
+              <CornerFlowers position="bottom-left" opacity={0.4} scale={1.2} />
+              <div className="absolute -top-[10%] -right-[5%] w-[40%] h-[60%] bg-brand-emerald/10 blur-[100px] rounded-full pointer-events-none" />
               <Location />
             </section>
 
