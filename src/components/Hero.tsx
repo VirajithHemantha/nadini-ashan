@@ -48,12 +48,12 @@ export const Hero: React.FC = () => {
             Save the Date
           </motion.span>
           <h1 className="text-white text-4xl sm:text-7xl font-display tracking-widest drop-shadow-[0_10px_30px_rgba(0,0,0,1)] mb-4">
-            <span className="bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-blue-100">THILINI</span>
-            <span className="italic font-light text-brand-primary-light mx-4 sm:mx-6 drop-shadow-[0_0_15px_rgba(70,130,180,0.5)]">&</span>
-            <span className="bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-blue-100">NADUN</span>
+            <span className="bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-brand-champagne">NADINI</span>
+            <span className="italic font-light text-brand-primary-light mx-4 sm:mx-6 drop-shadow-[0_0_15px_rgba(212,175,55,0.5)]">&</span>
+            <span className="bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-brand-champagne">ASHAN</span>
           </h1>
           <motion.div 
-            className="w-24 h-[1.5px] bg-gradient-to-r from-transparent via-brand-primary-light to-transparent mx-auto mt-4 mb-8 shadow-[0_0_20px_rgba(70,130,180,0.8)]"
+            className="w-24 h-[1.5px] bg-gradient-to-r from-transparent via-brand-primary-light to-transparent mx-auto mt-4 mb-8 shadow-[0_0_20px_rgba(212,175,55,0.8)]"
             initial={{ width: 0 }}
             animate={{ width: 96 }}
             transition={{ delay: 2, duration: 1 }}
@@ -64,7 +64,7 @@ export const Hero: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 2.2, duration: 1 }}
           >
-            20 . 08 . 2026
+            12 . 09 . 2026
           </motion.p>
           <motion.span
             className="text-[9px] sm:text-[10px] uppercase tracking-[0.4em] text-white/90 font-medium mt-10 block drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
@@ -72,7 +72,7 @@ export const Hero: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 2.5, duration: 1 }}
           >
-            Waters Edge • Battaramulla
+            Tangerine Beach Hotel • Kalutara
           </motion.span>
         </div>
       </motion.div>
@@ -90,7 +90,7 @@ export const Hero: React.FC = () => {
         transition={{ delay: 2.5, duration: 1 }}
         whileHover={{ scale: 1.1 }}
       >
-        <span className="text-[9px] sm:text-[10px] font-sans uppercase tracking-[0.4em] text-blue-100 font-semibold drop-shadow-md">Discover</span>
+        <span className="text-[9px] sm:text-[10px] font-sans uppercase tracking-[0.4em] text-brand-champagne font-semibold drop-shadow-md">Discover</span>
         <div className="w-[1px] h-12 sm:h-20 bg-gradient-to-b from-brand-primary/60 to-transparent animate-bounce" />
       </motion.div>
 

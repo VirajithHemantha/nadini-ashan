@@ -9,9 +9,14 @@ export const HeroContent: React.FC = () => {
       <CornerFlowers position="all" opacity={0.8} scale={1.8} />
       {/* Background Image with Elegant Overlays */}
       <div className="absolute inset-0 z-0 bg-brand-ivory">
-        <div className="absolute inset-0 bg-brand-ivory/70 backdrop-blur-[2px]" />
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/10 via-transparent to-brand-primary/5" />
-        <div className="absolute inset-0 bg-brand-primary/5 mix-blend-multiply" />
+        {/* Watermark Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-60"
+          style={{ backgroundImage: 'url("/pre/WhatsApp Image 2026-07-22 at 01.20.32.jpeg")' }}
+        />
+        {/* Lighter overlay to ensure image is visible while keeping text readable */}
+        <div className="absolute inset-0 bg-brand-ivory/40" />
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-ivory/80 via-brand-ivory/40 to-brand-primary/20" />
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
@@ -35,10 +40,10 @@ export const HeroContent: React.FC = () => {
 
           <div className="relative mb-12 w-full flex justify-center">
             <h1 className="relative text-6xl sm:text-8xl lg:text-9xl font-display text-stone-800 leading-tight drop-shadow-sm">
-              Thilini <br className="sm:hidden" />
+              Nadini <br className="sm:hidden" />
               <span className="text-brand-primary-light italic font-light mx-4 sm:mx-8 text-5xl sm:text-7xl lg:text-8xl inline-block -translate-y-2 sm:-translate-y-4">&</span>
               <br className="sm:hidden" />
-              Nadun
+              Ashan
             </h1>
           </div>
 
@@ -53,10 +58,10 @@ export const HeroContent: React.FC = () => {
           {/* Enhanced Date pill with premium glass effect */}
           <div className="inline-block relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-brand-primary/40 via-brand-primary-light/40 to-brand-primary/40 rounded-full blur-[8px] opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-300 transform group-hover:scale-105" />
-            <div className="relative px-8 sm:px-16 py-4 sm:py-6 bg-white/70 backdrop-blur-lg border border-brand-primary/50 rounded-full shadow-[0_8px_30px_rgba(70,130,180,0.1)] flex items-center justify-center">
+            <div className="relative px-8 sm:px-16 py-4 sm:py-6 bg-white/70 backdrop-blur-lg border border-brand-primary/50 rounded-full shadow-[0_8px_30px_rgba(142,122,93,0.1)] flex items-center justify-center">
               <span className="relative text-2xl sm:text-4xl font-serif text-brand-primary tracking-[0.3em] font-medium drop-shadow-sm flex items-center gap-4">
                 <Sparkles className="w-4 h-4 text-brand-primary-light" />
-                20 . 08 . 2026
+                12 . 09 . 2026
                 <Sparkles className="w-4 h-4 text-brand-primary-light" />
               </span>
             </div>

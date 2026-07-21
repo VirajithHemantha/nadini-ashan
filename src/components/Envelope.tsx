@@ -27,16 +27,16 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
           exit={{ opacity: 0, scale: 1.1, filter: 'blur(30px)' }}
           transition={{ duration: 1.5, ease: "easeInOut" }}
         >
-          {/* Deep Cinematic Rose/Sakura Background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0d131f] via-[#1e293b] to-[#020617]" />
+          {/* Deep Cinematic Beige/Gold Background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-brand-primary-deep via-brand-primary to-brand-primary-light" />
           <div className="absolute top-[-20%] right-[-10%] w-[100vw] h-[100vw] max-w-[1200px] max-h-[1200px] bg-[#d4af37]/10 blur-[150px] rounded-full opacity-60 pointer-events-none mix-blend-screen animate-pulse" style={{ animationDuration: '8s' }} />
-          <div className="absolute bottom-[-20%] left-[-10%] w-[80vw] h-[80vw] max-w-[1000px] max-h-[1000px] bg-[#7382a0]/30 blur-[150px] rounded-full opacity-50 pointer-events-none mix-blend-screen" />
+          <div className="absolute bottom-[-20%] left-[-10%] w-[80vw] h-[80vw] max-w-[1000px] max-h-[1000px] bg-brand-gold-deep/30 blur-[150px] rounded-full opacity-50 pointer-events-none mix-blend-screen" />
 
           <FloatingPetals />
 
           {/* Majestic Glow Behind Envelope */}
           <motion.div
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-[#7382a0]/20 rounded-full blur-[100px]"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-brand-gold-deep/20 rounded-full blur-[100px]"
             animate={isOpened ? { scale: 1.8, opacity: 0.2 } : { scale: 1, opacity: 0.6 }}
             transition={{ duration: 3 }}
           />
@@ -48,7 +48,7 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
             transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
           >
             {/* Envelope Back Base (Premium Sakura Texture) */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#99a4bc] to-[#53617e] shadow-[0_50px_100px_rgba(10,20,50,0.6)] rounded-xl border border-[#d4af37]/40 overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-[#F4E9D8] to-[#E5D3B3] shadow-[0_50px_100px_rgba(10,20,50,0.6)] rounded-xl border border-[#d4af37]/40 overflow-hidden">
               <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-overlay opacity-20" />
               <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] mix-blend-overlay opacity-30" />
               <div className="absolute inset-3 border-[1.5px] border-[#d4af37]/30 rounded-lg pointer-events-none" />
@@ -64,7 +64,7 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
             >
               {/* Card Inner Arch Border */}
               <div className="absolute inset-2 border-[1.5px] border-[#d4af37]/60 rounded-t-[3.5rem] sm:rounded-t-[5.5rem] pointer-events-none" />
-              <div className="absolute inset-3 border-[1px] border-[#7382a0]/20 rounded-t-[3.2rem] sm:rounded-t-[5.2rem] pointer-events-none" />
+              <div className="absolute inset-3 border-[1px] border-[#d4af37]/20 rounded-t-[3.2rem] sm:rounded-t-[5.2rem] pointer-events-none" />
 
               {/* Kandyan border removed */}
 
@@ -78,19 +78,19 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
                   <Heart className="w-6 h-6 text-brand-gold-deep" />
                 </div>
 
-                <h2 className="text-3xl sm:text-5xl font-display font-medium text-[#4a5770] tracking-tight leading-[1.1] mb-2 sm:mb-3 drop-shadow-sm">
-                  Dimalka <br />
+                <h2 className="text-3xl sm:text-5xl font-display font-medium text-stone-800 tracking-tight leading-[1.1] mb-2 sm:mb-3 drop-shadow-sm">
+                  Nadini <br />
                   <span className="text-xl sm:text-3xl text-[#d4af37] italic font-light my-1 block">&</span>
-                  Dinindu
+                  Ashan
                 </h2>
 
                 <div className="w-16 sm:w-24 h-[2px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto my-3 sm:my-5" />
 
-                <p className="text-[8px] sm:text-[11px] font-sans tracking-[0.3em] sm:tracking-[0.5em] uppercase text-[#5c6b8a] mb-2 sm:mb-3 font-bold leading-none">
+                <p className="text-[8px] sm:text-[11px] font-sans tracking-[0.3em] sm:tracking-[0.5em] uppercase text-stone-500 mb-2 sm:mb-3 font-bold leading-none">
                   Request the honor of your presence
                 </p>
-                <p className="text-base sm:text-2xl font-serif text-[#4a5770] tracking-[0.2em] mt-1 drop-shadow-sm leading-none font-semibold">
-                  20 • 08 • 2026
+                <p className="text-base sm:text-2xl font-serif text-stone-800 tracking-[0.2em] mt-1 drop-shadow-sm leading-none font-semibold">
+                  12 • 09 • 2026
                 </p>
               </motion.div>
 
@@ -112,12 +112,12 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
                 className="absolute inset-0 drop-shadow-[0_15px_25px_rgba(50,0,10,0.5)]"
                 style={{ backfaceVisibility: 'hidden' }}
               >
-                <div className="w-full h-full bg-gradient-to-b from-[#99a4bc] to-[#53617e] overflow-hidden" style={{ clipPath: 'polygon(0 0, 100% 0, 50% 100%)' }}>
+                <div className="w-full h-full bg-gradient-to-b from-[#F4E9D8] to-[#E5D3B3] overflow-hidden" style={{ clipPath: 'polygon(0 0, 100% 0, 50% 100%)' }}>
                   <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] mix-blend-overlay opacity-30" />
                   <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/diagonal-striped-brick.png')] mix-blend-overlay opacity-10" />
                   {/* Gold edge trim on flap */}
                   <div className="absolute bottom-0 left-0 w-full h-full border-b-[4px] border-r-[4px] border-[#d4af37] transform rotate-45 translate-y-1/2 scale-150 shadow-[0_0_10px_rgba(212,175,55,0.4)]" />
-                  <div className="absolute bottom-0 left-0 w-full h-full border-b-[1px] border-r-[1px] border-[#1e293b]/40 transform rotate-45 translate-y-1/2 scale-150 mt-1 ml-1" />
+                  <div className="absolute bottom-0 left-0 w-full h-full border-b-[1px] border-r-[1px] border-[#d4af37]/40 transform rotate-45 translate-y-1/2 scale-150 mt-1 ml-1" />
                 </div>
               </div>
 
@@ -126,12 +126,12 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
                 className="absolute inset-0"
                 style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
               >
-                <div className="w-full h-full bg-gradient-to-t from-[#d4af37] to-[#8b6b15] border-t-2 border-[#53617e]" style={{ clipPath: 'polygon(0 0, 100% 0, 50% 100%)' }}>
+                <div className="w-full h-full bg-gradient-to-t from-[#d4af37] to-[#8b6b15] border-t-2 border-[#E5D3B3]" style={{ clipPath: 'polygon(0 0, 100% 0, 50% 100%)' }}>
                   {/* Kandyan floral pattern lining */}
                   {/* Kandyan floral pattern lining removed */}
                   <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/paper.png')] mix-blend-overlay opacity-40" />
                   {/* Inner Trim */}
-                  <div className="absolute bottom-0 left-0 w-full h-full border-b-[3px] border-r-[3px] border-[#53617e]/50 transform rotate-45 translate-y-1/2 scale-140" />
+                  <div className="absolute bottom-0 left-0 w-full h-full border-b-[3px] border-r-[3px] border-[#E5D3B3]/50 transform rotate-45 translate-y-1/2 scale-140" />
                 </div>
               </div>
             </motion.div>
@@ -140,22 +140,22 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
             <div className="absolute inset-0 z-20 pointer-events-none rounded-b-xl overflow-hidden">
               {/* Left Fold */}
               <div className="absolute inset-0 drop-shadow-[10px_0_15px_rgba(10,20,50,0.4)] pointer-events-none">
-                <div className="w-full h-full bg-gradient-to-r from-[#7382a0] to-[#091fa3]/0" style={{ clipPath: 'polygon(0 0, 55% 50%, 0 100%)' }}>
-                   <div className="absolute inset-0 bg-[#7382a0] bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] mix-blend-overlay opacity-40 w-full h-full" style={{ clipPath: 'polygon(0 0, 55% 50%, 0 100%)' }} />
+                <div className="w-full h-full bg-gradient-to-r from-[#DBC5A0] to-brand-primary-light/0" style={{ clipPath: 'polygon(0 0, 55% 50%, 0 100%)' }}>
+                   <div className="absolute inset-0 bg-[#DBC5A0] bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] mix-blend-overlay opacity-40 w-full h-full" style={{ clipPath: 'polygon(0 0, 55% 50%, 0 100%)' }} />
                 </div>
               </div>
 
               {/* Right Fold */}
               <div className="absolute inset-0 drop-shadow-[-10px_0_15px_rgba(10,20,50,0.4)] pointer-events-none">
-                <div className="w-full h-full bg-gradient-to-l from-[#7382a0] to-[#091fa3]/0" style={{ clipPath: 'polygon(100% 0, 45% 50%, 100% 100%)' }}>
-                   <div className="absolute inset-0 bg-[#7382a0] bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] mix-blend-overlay opacity-40 w-full h-full" style={{ clipPath: 'polygon(100% 0, 45% 50%, 100% 100%)' }} />
+                <div className="w-full h-full bg-gradient-to-l from-[#DBC5A0] to-brand-primary-light/0" style={{ clipPath: 'polygon(100% 0, 45% 50%, 100% 100%)' }}>
+                   <div className="absolute inset-0 bg-[#DBC5A0] bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] mix-blend-overlay opacity-40 w-full h-full" style={{ clipPath: 'polygon(100% 0, 45% 50%, 100% 100%)' }} />
                 </div>
               </div>
 
               {/* Bottom Fold */}
               <div className="absolute inset-0 drop-shadow-[0_-10px_20px_rgba(10,20,50,0.5)] pointer-events-none">
-                <div className="w-full h-full bg-gradient-to-t from-[#637291] to-[#53617e]" style={{ clipPath: 'polygon(0 100%, 50% 45%, 100% 100%)' }}>
-                   <div className="absolute inset-0 bg-[#637291] bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] mix-blend-overlay opacity-40 w-full h-full" style={{ clipPath: 'polygon(0 100%, 50% 45%, 100% 100%)' }} />
+                <div className="w-full h-full bg-gradient-to-t from-[#E0CCAA] to-[#DBC5A0]" style={{ clipPath: 'polygon(0 100%, 50% 45%, 100% 100%)' }}>
+                   <div className="absolute inset-0 bg-[#E0CCAA] bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] mix-blend-overlay opacity-40 w-full h-full" style={{ clipPath: 'polygon(0 100%, 50% 45%, 100% 100%)' }} />
                 </div>
               </div>
             </div>
@@ -189,7 +189,7 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
                   }}
                 >
                   {/* Wax base with steel blue realism */}
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-brand-primary-muted via-brand-primary to-brand-primary-deep border border-brand-primary-deep shadow-[inset_0_4px_10px_rgba(70,130,180,0.8),inset_0_-4px_15px_rgba(29,53,87,0.9)]" />
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-brand-primary-muted via-brand-primary to-brand-primary-deep border border-brand-primary-deep shadow-[inset_0_4px_10px_rgba(142,122,93,0.8),inset_0_-4px_15px_rgba(142,122,93,0.9)]" />
 
                   {/* Wax ridge ring - Gold infused edge */}
                   <div className="absolute inset-2 sm:inset-3 rounded-full border-[3px] border-[#d4af37]/60 shadow-[inset_0_2px_5px_rgba(50,0,10,0.8),0_2px_4px_rgba(212,175,55,0.4)] mix-blend-screen" />
@@ -199,13 +199,13 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
 
                   <div className="relative flex flex-col items-center justify-center translate-y-[-2px]">
                     <span className="text-[#d4af37] font-serif text-3xl sm:text-4xl italic tracking-tighter drop-shadow-[0_2px_4px_rgba(50,0,10,0.9)]">
-                      D
+                      N
                     </span>
                     <span className="text-[#d4af37]/70 font-serif text-sm sm:text-base mx-0.5 font-light drop-shadow-[0_2px_4px_rgba(50,0,10,0.9)] my-[-6px]">
                       &
                     </span>
                     <span className="text-[#d4af37] font-serif text-3xl sm:text-4xl italic tracking-tighter drop-shadow-[0_2px_4px_rgba(50,0,10,0.9)]">
-                      D
+                      A
                     </span>
                   </div>
 
@@ -228,7 +228,7 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
               >
                 <div className="flex flex-col items-center gap-2">
                   <p className="text-[#fffdf9] font-serif italic text-2xl sm:text-4xl font-light tracking-wide text-shadow-xl drop-shadow-[0_8px_16px_rgba(10,20,50,0.8)]">
-                    Royal Sri Lankan Invitation
+                    Sri Lankan Wedding Invitation
                   </p>
                   <p className="text-[#d4af37] font-sans text-[10px] sm:text-xs tracking-[0.5em] uppercase font-bold drop-shadow-md">
                     Break the seal to reveal

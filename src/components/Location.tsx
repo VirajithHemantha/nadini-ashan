@@ -3,9 +3,9 @@ import { motion } from 'motion/react';
 import { MapPin, Navigation, Compass, Map } from 'lucide-react';
 
 export const Location: React.FC = () => {
-   const venueAddress = "Waters Edge, Battaramulla";
-  const mapUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8443924765634!2d79.9168925!3d6.9056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2597405e3e60d%3A0xc07a81080344d183!2sWaters%20Edge!5e0!3m2!1sen!2slk!4v1714736345678!5m2!1sen!2slk`;
-  const liveLocationUrl = "https://maps.app.goo.gl/uXpD3Bf4s4FmS8yJ6";
+   const venueAddress = "Tangerine Beach Hotel, Kalutara";
+  const mapUrl = "https://maps.google.com/maps?q=Tangerine%20Beach%20Hotel,%20Kalutara,%20Sri%20Lanka&t=&z=15&ie=UTF8&iwloc=&output=embed";
+  const liveLocationUrl = "https://maps.app.goo.gl/DjuQ5XxeUaXYduX3A";
 
   return (
     <div className="max-w-[85rem] mx-auto px-6 relative py-12">
@@ -22,7 +22,7 @@ export const Location: React.FC = () => {
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="w-full lg:w-[45%] z-20"
         >
-          <div className="bg-[#1D3557]/90 backdrop-blur-2xl p-10 sm:p-14 lg:p-16 rounded-[2.5rem] shadow-[0_30px_60px_rgba(0,0,0,0.3)] border border-brand-primary-light/30 lg:translate-x-12 relative overflow-hidden group">
+          <div className="bg-brand-champagne/90 backdrop-blur-2xl p-10 sm:p-14 lg:p-16 rounded-[2.5rem] shadow-[0_30px_60px_rgba(142,122,93,0.15)] border border-white/60 lg:translate-x-12 relative overflow-hidden group">
 
             {/* Elegant top border gradient */}
             <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-brand-primary-muted via-brand-primary to-brand-primary-deep" />
@@ -35,20 +35,20 @@ export const Location: React.FC = () => {
                 <div className="w-16 h-[1px] bg-gradient-to-r from-brand-primary-light/60 to-transparent" />
               </div>
 
-              <h2 className="text-5xl sm:text-6xl font-display text-white mb-6 leading-tight drop-shadow-sm">
+              <h2 className="text-5xl sm:text-6xl font-display text-stone-800 mb-6 leading-tight drop-shadow-sm">
                 Where We <br />
-                <span className="italic font-light text-brand-primary-light">Celebrate</span>
+                <span className="italic font-light text-brand-primary">Celebrate</span>
               </h2>
 
               <div className="flex items-start gap-5 mt-10">
-                <div className="w-12 h-12 bg-blue-900/40 rounded-full border border-brand-primary-light/40 shadow-inner flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-500">
-                  <MapPin className="text-brand-primary-light w-5 h-5" />
+                <div className="w-12 h-12 bg-brand-primary/20 rounded-full border border-brand-primary/40 shadow-inner flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-500">
+                  <MapPin className="text-brand-primary w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-2xl font-serif text-white mb-1">Waters Edge</p>
-                  <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-blue-100/60 leading-relaxed mb-6">Battaramulla, Sri Lanka</p>
+                  <p className="text-2xl font-serif text-stone-800 mb-1">Tangerine Beach Hotel</p>
+                  <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-stone-500/80 leading-relaxed mb-6">Kalutara, Sri Lanka</p>
 
-                  <p className="text-blue-100/80 italic font-serif text-lg leading-relaxed max-w-sm mb-10 pl-4 border-l-[1.5px] border-brand-primary-light/40">
+                  <p className="text-stone-600/90 italic font-serif text-lg leading-relaxed max-w-sm mb-10 pl-4 border-l-[1.5px] border-brand-primary/40">
                     "A serene and elegant setting where we will begin our new chapter together."
                   </p>
 
@@ -56,7 +56,7 @@ export const Location: React.FC = () => {
                     href={liveLocationUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-3 bg-white text-blue-900 px-8 py-4 rounded-full font-sans tracking-[0.2em] text-xs uppercase hover:bg-blue-50 hover:shadow-[0_10px_20px_rgba(0,0,0,0.4)] transition-all duration-300 active:scale-95 group/btn"
+                    className="inline-flex items-center gap-3 bg-brand-primary text-white px-8 py-4 rounded-full font-sans tracking-[0.2em] text-xs uppercase hover:bg-brand-primary-deep hover:shadow-[0_10px_20px_rgba(142,122,93,0.3)] transition-all duration-300 active:scale-95 group/btn"
                   >
                     <Navigation className="w-4 h-4 text-brand-primary group-hover/btn:rotate-45 transition-transform duration-300" />
                     Open Live Location

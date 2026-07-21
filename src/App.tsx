@@ -12,7 +12,7 @@ import { Location } from './components/Location';
 import { RSVPForm } from './components/RSVPForm';
 import { Footer } from './components/Footer';
 import { IntroVideo } from './components/IntroVideo';
-import { Gallery } from './components/Gallery';
+// Removed Gallery import
 import { HeroContent } from './components/HeroContent';
 import { CornerFlowers } from './components/CornerFlowers';
 
@@ -22,7 +22,7 @@ export default function App() {
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  const weddingDate = new Date('2026-08-20T09:51:00');
+  const weddingDate = new Date('2026-09-12T17:00:00');
 
   const startMusic = () => {
     if (audioRef.current && !isMusicPlaying) {
@@ -49,13 +49,13 @@ export default function App() {
       {/* Background Music */}
       <audio
         ref={audioRef}
-        src="/paulyudin-wedding-485932.mp3"
+        src="/keheralle-dinesh-gamage-shanudrie-priyasad.mp3"
         loop
       />
 
       <AnimatePresence mode="wait">
         {showIntro ? (
-          <IntroVideo key="intro" onComplete={() => { setShowIntro(false); setShowMain(true); startMusic(); }} />
+          <IntroVideo key="intro" onStart={startMusic} onComplete={() => { setShowIntro(false); setShowMain(true); }} />
         ) : (
           <motion.main
             key="main"
@@ -79,7 +79,7 @@ export default function App() {
 
             <HeroContent />
 
-            <section id="countdown" className="py-16 sm:py-32 relative overflow-hidden bg-gradient-to-br from-[#1D3557] via-[#457B9D] to-[#2C3E50]">
+            <section id="countdown" className="py-16 sm:py-32 relative overflow-hidden bg-gradient-to-br from-brand-ivory via-brand-champagne to-brand-primary-light">
               <CornerFlowers position="top-left" opacity={0.4} scale={1.2} />
               <CornerFlowers position="bottom-right" opacity={0.4} scale={1.2} />
               {/* Premium Background Ambient Glows */}
@@ -95,11 +95,11 @@ export default function App() {
                   <div className="w-12 h-[1px] bg-gradient-to-l from-transparent to-brand-primary-light/60" />
                 </div>
                 
-                <h2 className="text-5xl sm:text-7xl font-display text-white tracking-tight mb-6 drop-shadow-sm">
-                  Until We Say <span className="italic text-brand-primary-light font-light">"I Do"</span>
+                <h2 className="text-5xl sm:text-7xl font-display text-stone-800 tracking-tight mb-6 drop-shadow-sm">
+                  Until We Say <span className="italic text-brand-primary font-light">"I Do"</span>
                 </h2>
                 
-                <p className="text-lg sm:text-xl font-serif italic text-blue-100/80 mb-12 sm:mb-16 max-w-2xl text-center leading-relaxed">
+                <p className="text-lg sm:text-xl font-serif italic text-stone-600/90 mb-12 sm:mb-16 max-w-2xl text-center leading-relaxed">
                   Time is standing still as we eagerly await the moment our forever begins.
                 </p>
 
@@ -122,11 +122,8 @@ export default function App() {
 
             {/* Timeline section removed entirely as requested */}
 
-            <section id="gallery" className="bg-brand-ivory">
-              <Gallery />
-            </section>
-
-            <section id="location" className="py-16 sm:py-32 bg-gradient-to-br from-[#1D3557] to-[#2C3E50] relative overflow-hidden">
+            {/* Gallery section removed entirely as requested */}
+            <section id="location" className="py-16 sm:py-32 bg-gradient-to-br from-brand-primary-light to-brand-champagne relative overflow-hidden">
               <CornerFlowers position="bottom-left" opacity={0.4} scale={1.2} />
               <div className="absolute -top-[10%] -right-[5%] w-[40%] h-[60%] bg-brand-primary/10 blur-[100px] rounded-full pointer-events-none" />
               <Location />

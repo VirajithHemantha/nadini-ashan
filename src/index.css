@@ -10,17 +10,17 @@
   --color-brand-gold-light: #F9E27D;
   --color-brand-gold-deep: #B8860B;
   
-  --color-brand-primary: #4682B4; /* Steel Blue */
-  --color-brand-primary-light: #B0C4DE; /* Light Steel Blue */
-  --color-brand-primary-deep: #2C3E50; /* Dark Steel Blue / Midnight Blue */
-  --color-brand-primary-muted: #5F9EA0; /* Cadet Blue (Muted Steel) */
+  --color-brand-primary: #C9B291; /* Beige */
+  --color-brand-primary-light: #E8DFD3; /* Light Beige */
+  --color-brand-primary-deep: #8E7A5D; /* Dark Beige */
+  --color-brand-primary-muted: #D5C7B3; /* Muted Beige */
   
-  --color-brand-champagne: #F0F4F8; /* Light Blue-Ivory */
-  --color-brand-ivory: #F8FAFC; /* Soft Blue-Ivory */
+  --color-brand-champagne: #FBF9F6; /* Warm White */
+  --color-brand-ivory: #FFFFFF; /* Pure White */
   --color-brand-pink: #E63946; /* Accent Red */
   --color-brand-white: #FAFAFA;
-  --color-brand-accent: #457B9D; /* Steel Blue Accent */
-  --color-brand-dark: #1D3557; /* Navy Blue */
+  --color-brand-accent: #C9B291; /* Beige Accent */
+  --color-brand-dark: #3E362C; /* Dark Beige */
 }
 
 @layer base {
@@ -58,7 +58,7 @@
 }
 
 .wax-seal {
-  background: radial-gradient(circle at 30% 30%, #4682B4, #457B9D, #1D3557);
+  background: radial-gradient(circle at 30% 30%, #D4C4B7, #C9B291, #8E7A5D);
   box-shadow:
     0 8px 25px rgba(29, 53, 87, 0.4),
     inset -3px -3px 8px rgba(29, 53, 87, 0.3),
