@@ -97,8 +97,6 @@ export const CeremonyDetails: React.FC = () => {
 
             {/* Premium Floating Card Removed */}
 
-            {/* Decorative Floating Circles */}
-            <div className="absolute -top-2 -right-2 w-16 sm:w-24 h-16 sm:w-24 rounded-full border-[1.5px] border-brand-gold/20" />
           </motion.div>
         </div>
       </div>
