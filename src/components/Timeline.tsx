@@ -4,7 +4,7 @@ import { Heart, Music, Camera, Utensils, PartyPopper } from 'lucide-react';
 
 const events = [
   { time: '09:30 AM', title: 'Guest Arrival', icon: Heart, desc: 'Welcoming our loved ones to The Kingsbury' },
-  { time: '09:51 AM', title: 'Poruwa Ceremony', icon: Music, desc: 'The traditional exchange of vows' },
+  { time: '09:51 AM', title: 'Wedding Ceremony', icon: Music, desc: 'The traditional exchange of vows' },
   { time: '11:00 AM', title: 'Champagne Toast', icon: PartyPopper, desc: 'Raising a glass to the new couple' },
   { time: '12:30 PM', title: 'Wedding Feast', icon: Utensils, desc: 'A celebratory lunch in the Grand Ballroom' },
   { time: '02:30 PM', title: 'Cake Cutting', icon: Camera, desc: 'Sweet moments and photographs' },

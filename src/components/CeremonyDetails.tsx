@@ -18,19 +18,19 @@ export const CeremonyDetails: React.FC = () => {
             transition={{ duration: 1.2, ease: "easeOut" }}
           >
             <div className="inline-flex items-center gap-4 mb-6">
-              <span className="text-brand-primary uppercase tracking-[0.4em] sm:tracking-[0.5em] text-[10px] sm:text-[11px] font-bold drop-shadow-sm">
+              <span className="text-stone-900 uppercase tracking-[0.4em] sm:tracking-[0.5em] text-[10px] sm:text-[11px] font-bold drop-shadow-sm">
                 The Sacred Union
               </span>
               <div className="w-12 sm:w-20 h-[1px] bg-gradient-to-r from-brand-primary/60 to-transparent" />
             </div>
 
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-display text-stone-800 mb-8 leading-[1.1] drop-shadow-sm">
+            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-display text-stone-900 font-semibold mb-8 leading-[1.1] drop-shadow-sm">
               A Celebration of <br />
-              <span className="italic font-light text-brand-primary">Tradition & Love</span>
+              <span className="italic font-bold text-stone-900">Tradition & Love</span>
             </h2>
 
             <p className="text-stone-500/90 font-serif text-lg sm:text-xl leading-relaxed mb-16 max-w-lg">
-              We are honored to invite you to witness our union as we exchange vows in a traditional Poruwa ceremony, surrounded by the beauty of nature and the warmth of our loved ones.
+              We are honored to invite you to witness our union as we exchange vows, surrounded by the beauty of nature and the warmth of our loved ones.
             </p>
 
             {/* Premium Timeline */}
@@ -98,7 +98,6 @@ export const CeremonyDetails: React.FC = () => {
             {/* Premium Floating Card Removed */}
 
             {/* Decorative Floating Circles */}
-            <div className="absolute -top-6 -right-6 w-24 sm:w-32 h-24 sm:w-32 rounded-full border-[1.5px] border-dashed border-brand-gold/30 animate-[spin_20s_linear_infinite]" />
             <div className="absolute -top-2 -right-2 w-16 sm:w-24 h-16 sm:w-24 rounded-full border-[1.5px] border-brand-gold/20" />
           </motion.div>
         </div>

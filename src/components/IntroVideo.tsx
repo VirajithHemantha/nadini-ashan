@@ -17,14 +17,9 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete, onStart }) =
     // Use a small timeout to ensure the video element is rendered before playing
     setTimeout(() => {
       if (videoRef.current) {
-        videoRef.current.muted = false; // Unmute since user interacted
+        videoRef.current.muted = true; // Keep muted so background music plays clearly
         videoRef.current.play().catch(err => {
           console.error("Video play failed:", err);
-          // Fallback: try muted play if unmuted fails
-          if (videoRef.current) {
-            videoRef.current.muted = true;
-            videoRef.current.play();
-          }
         });
       }
     }, 100);
@@ -89,6 +84,7 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete, onStart }) =
               className="w-full h-full object-cover"
               playsInline
               autoPlay
+              muted
               preload="auto"
               onEnded={onComplete}
               onError={(e) => {

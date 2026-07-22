@@ -43,7 +43,7 @@ export default function App() {
   };
 
   return (
-    <div className="relative min-h-screen font-sans selection:bg-brand-gold selection:text-white overflow-x-hidden bg-brand-ivory">
+    <div className="relative min-h-screen font-sans selection:bg-brand-gold selection:text-white overflow-x-hidden bg-brand-primary-deep">
       <FloatingPetals />
       
       {/* Background Music */}
@@ -79,7 +79,7 @@ export default function App() {
 
             <HeroContent />
 
-            <section id="countdown" className="py-16 sm:py-32 relative overflow-hidden bg-gradient-to-br from-brand-ivory via-brand-champagne to-brand-primary-light">
+            <section id="countdown" className="py-16 sm:py-32 relative overflow-hidden bg-gradient-to-br from-brand-primary-deep via-brand-primary to-brand-primary-light">
               <CornerFlowers position="top-left" opacity={0.4} scale={1.2} />
               <CornerFlowers position="bottom-right" opacity={0.4} scale={1.2} />
               {/* Premium Background Ambient Glows */}
@@ -95,8 +95,8 @@ export default function App() {
                   <div className="w-12 h-[1px] bg-gradient-to-l from-transparent to-brand-primary-light/60" />
                 </div>
                 
-                <h2 className="text-5xl sm:text-7xl font-display text-stone-800 tracking-tight mb-6 drop-shadow-sm">
-                  Until We Say <span className="italic text-brand-primary font-light">"I Do"</span>
+                <h2 className="text-5xl sm:text-7xl font-display text-stone-900 tracking-tight mb-6 drop-shadow-sm font-semibold">
+                  Until We Say <span className="italic text-stone-900 font-bold">"I Do"</span>
                 </h2>
                 
                 <p className="text-lg sm:text-xl font-serif italic text-stone-600/90 mb-12 sm:mb-16 max-w-2xl text-center leading-relaxed">
@@ -107,14 +107,14 @@ export default function App() {
               </div>
             </section>
 
-            <section id="couple" className="py-16 sm:py-32 bg-gradient-to-b from-brand-ivory to-brand-champagne relative overflow-hidden">
+            <section id="couple" className="py-16 sm:py-32 bg-gradient-to-b from-brand-primary-light via-brand-primary to-brand-primary-deep relative overflow-hidden">
               <CornerFlowers position="top-right" opacity={0.6} scale={1.5} />
               <CornerFlowers position="bottom-left" opacity={0.6} scale={1.5} />
               <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03] pointer-events-none" />
               <CoupleDetails />
             </section>
 
-            <section id="ceremony" className="py-16 sm:py-32 bg-brand-champagne/40 relative overflow-hidden">
+            <section id="ceremony" className="py-16 sm:py-32 bg-gradient-to-tr from-brand-primary-deep via-brand-primary to-brand-primary-light relative overflow-hidden">
               <CornerFlowers position="all" opacity={0.6} scale={1.3} />
               <div className="absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-brand-gold-deep/20 to-transparent" />
               <CeremonyDetails />
@@ -123,13 +123,13 @@ export default function App() {
             {/* Timeline section removed entirely as requested */}
 
             {/* Gallery section removed entirely as requested */}
-            <section id="location" className="py-16 sm:py-32 bg-gradient-to-br from-brand-primary-light to-brand-champagne relative overflow-hidden">
+            <section id="location" className="py-16 sm:py-32 bg-gradient-to-bl from-brand-primary-deep via-brand-primary to-brand-primary-light relative overflow-hidden">
               <CornerFlowers position="bottom-left" opacity={0.4} scale={1.2} />
               <div className="absolute -top-[10%] -right-[5%] w-[40%] h-[60%] bg-brand-primary/10 blur-[100px] rounded-full pointer-events-none" />
               <Location />
             </section>
 
-            <section id="rsvp" className="py-16 sm:py-32 bg-brand-ivory relative overflow-hidden">
+            <section id="rsvp" className="py-16 sm:py-32 bg-gradient-to-t from-brand-primary-deep via-brand-primary to-brand-primary-light relative overflow-hidden">
               <CornerFlowers position="top-right" opacity={0.6} scale={1.6} />
               <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/natural-paper.png')] opacity-20 pointer-events-none" />
               <RSVPForm />

@@ -17,11 +17,11 @@ export const CoupleDetails: React.FC = () => {
         >
           <div className="inline-flex items-center gap-4 mb-6 mt-4">
             <div className="w-12 sm:w-20 h-[1px] bg-gradient-to-r from-transparent to-brand-primary/60" />
-            <span className="text-brand-primary uppercase tracking-[0.5em] text-[11px] font-semibold font-sans drop-shadow-sm">The Protagonists</span>
+            <span className="text-stone-900 font-bold uppercase tracking-[0.5em] text-[11px] font-sans drop-shadow-sm">The Protagonists</span>
             <div className="w-12 sm:w-20 h-[1px] bg-gradient-to-l from-transparent to-brand-primary/60" />
           </div>
-          <h2 className="text-5xl sm:text-7xl font-display text-stone-800 tracking-tight drop-shadow-sm">
-            Nadini <span className="italic text-brand-primary font-light mx-2">&</span> Ashan
+          <h2 className="text-5xl sm:text-7xl font-display text-stone-900 font-semibold tracking-tight drop-shadow-sm">
+            Nadini <span className="italic text-stone-900 font-bold mx-2">&</span> Ashan
           </h2>
         </motion.div>
       </div>
@@ -36,9 +36,9 @@ export const CoupleDetails: React.FC = () => {
           className="text-center lg:text-right flex-1 lg:pr-10 order-4 lg:order-1"
         >
           <div className="mb-4 flex flex-col items-center lg:items-end">
-            <span className="text-brand-primary uppercase tracking-[0.4em] text-[10px] font-bold mb-3 block">The Groom</span>
-            <h3 className="text-4xl sm:text-5xl font-display text-stone-800 mb-2 drop-shadow-sm">Ashan</h3>
-            <p className="text-stone-500/90 font-serif italic text-base sm:text-lg">Son of Mr and mrs Ekanayaka</p>
+            <span className="text-stone-900 uppercase tracking-[0.4em] text-[10px] font-bold mb-3 block">The Groom</span>
+            <h3 className="text-4xl sm:text-5xl font-display text-stone-900 font-semibold mb-2 drop-shadow-sm">Ashan</h3>
+            <p className="text-stone-800 font-serif italic text-base sm:text-lg font-medium">Son of Mr and mrs Ekanayaka</p>
           </div>
           <div className="hidden lg:flex justify-end mt-8">
             <Heart className="w-6 h-6 text-brand-pink/80 fill-brand-pink/30 transform hover:scale-110 transition-transform cursor-pointer drop-shadow-sm" />
@@ -86,9 +86,9 @@ export const CoupleDetails: React.FC = () => {
           className="text-center lg:text-left flex-1 lg:pl-10 order-2 lg:order-3"
         >
           <div className="mb-4 flex flex-col items-center lg:items-start">
-            <span className="text-brand-primary uppercase tracking-[0.4em] text-[10px] font-bold mb-3 block">The Bride</span>
-            <h3 className="text-4xl sm:text-5xl font-display text-stone-800 mb-2 drop-shadow-sm">Nadini</h3>
-            <p className="text-stone-500/90 font-serif italic text-base sm:text-lg">Daughter of Mr and mrs Gunathilake</p>
+            <span className="text-stone-900 uppercase tracking-[0.4em] text-[10px] font-bold mb-3 block">The Bride</span>
+            <h3 className="text-4xl sm:text-5xl font-display text-stone-900 font-semibold mb-2 drop-shadow-sm">Nadini</h3>
+            <p className="text-stone-800 font-serif italic text-base sm:text-lg font-medium">Daughter of Mr and mrs Gunathilake</p>
           </div>
           <div className="hidden lg:flex justify-start mt-8">
             <Heart className="w-6 h-6 text-brand-pink/80 fill-brand-pink/30 transform hover:scale-110 transition-transform cursor-pointer drop-shadow-sm" />
