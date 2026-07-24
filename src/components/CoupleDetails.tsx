@@ -26,7 +26,7 @@ export const CoupleDetails: React.FC = () => {
         </motion.div>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-8 relative z-10">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-8 relative z-10">
         {/* Groom Details (Left on Desktop, Bottom on Mobile) */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -38,7 +38,7 @@ export const CoupleDetails: React.FC = () => {
           <div className="mb-4 flex flex-col items-center lg:items-end">
             <span className="text-stone-900 uppercase tracking-[0.4em] text-[10px] font-bold mb-3 block">The Groom</span>
             <h3 className="text-4xl sm:text-5xl font-display text-stone-900 font-semibold mb-2 drop-shadow-sm">Ashan</h3>
-            <p className="text-stone-800 font-serif italic text-base sm:text-lg font-medium">Son of Mr and mrs Ekanayaka</p>
+            <p className="text-stone-800 font-serif italic text-base sm:text-lg font-medium">Son of Mr and Mrs Ekanayaka</p>
           </div>
           <div className="hidden lg:flex justify-end mt-8">
             <Heart className="w-6 h-6 text-brand-pink/80 fill-brand-pink/30 transform hover:scale-110 transition-transform cursor-pointer drop-shadow-sm" />
@@ -73,8 +73,8 @@ export const CoupleDetails: React.FC = () => {
         </motion.div>
 
         {/* Mobile divider between image and groom */}
-        <div className="lg:hidden order-3 w-full flex justify-center py-4 opacity-50">
-          <div className="w-1/2 h-px bg-gradient-to-r from-transparent via-brand-primary/40 to-transparent" />
+        <div className="lg:hidden order-3 w-full flex justify-center py-1">
+          <div className="w-1/2 h-px bg-gradient-to-r from-transparent via-brand-primary to-transparent" />
         </div>
 
         {/* Bride Details (Right) */}
@@ -88,7 +88,7 @@ export const CoupleDetails: React.FC = () => {
           <div className="mb-4 flex flex-col items-center lg:items-start">
             <span className="text-stone-900 uppercase tracking-[0.4em] text-[10px] font-bold mb-3 block">The Bride</span>
             <h3 className="text-4xl sm:text-5xl font-display text-stone-900 font-semibold mb-2 drop-shadow-sm">Nadini</h3>
-            <p className="text-stone-800 font-serif italic text-base sm:text-lg font-medium">Daughter of Mr and mrs Gunathilake</p>
+            <p className="text-stone-800 font-serif italic text-base sm:text-lg font-medium">Daughter of Mr and Mrs Gunathilake</p>
           </div>
           <div className="hidden lg:flex justify-start mt-8">
             <Heart className="w-6 h-6 text-brand-pink/80 fill-brand-pink/30 transform hover:scale-110 transition-transform cursor-pointer drop-shadow-sm" />

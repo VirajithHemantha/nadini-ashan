@@ -1,9 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Sparkles, Heart } from 'lucide-react';
 import { CornerFlowers } from './CornerFlowers';
 
 export const HeroContent: React.FC = () => {
+  const [guestString, setGuestString] = useState('');
+
+  useEffect(() => {
+    const searchParams = new URLSearchParams(window.location.search);
+    const prefix = searchParams.get('prefix');
+    const name = searchParams.get('name');
+    
+    if (prefix && name) {
+      setGuestString(`${prefix} ${name}`);
+    } else if (name) {
+      setGuestString(name);
+    }
+  }, []);
+
   return (
     <section className="relative min-h-screen py-24 sm:py-32 flex items-center justify-center overflow-hidden">
       <CornerFlowers position="all" opacity={0.8} scale={1.8} />
@@ -48,7 +62,10 @@ export const HeroContent: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16">
             <div className="hidden sm:block h-[1px] w-24 bg-gradient-to-r from-transparent to-brand-primary/40" />
             <p className="text-xl sm:text-3xl font-serif italic text-stone-700 tracking-wide px-4 text-center max-w-2xl leading-relaxed">
-              Together with our families, we joyfully invite you to join us
+              {guestString 
+                ? <>Together with our families, we cordially invite <br/><span className="text-stone-900 font-bold not-italic block mt-2 text-2xl sm:text-4xl drop-shadow-sm">{guestString}</span> to join us</>
+                : "Together with our families, we joyfully invite you to join us"
+              }
             </p>
             <div className="hidden sm:block h-[1px] w-24 bg-gradient-to-l from-transparent to-brand-primary/40" />
           </div>

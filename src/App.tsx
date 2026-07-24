@@ -15,12 +15,17 @@ import { IntroVideo } from './components/IntroVideo';
 // Removed Gallery import
 import { HeroContent } from './components/HeroContent';
 import { CornerFlowers } from './components/CornerFlowers';
+import { Admin } from './components/Admin';
 
 export default function App() {
   const [showIntro, setShowIntro] = useState(true);
   const [showMain, setShowMain] = useState(false);
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  if (window.location.pathname === '/admin') {
+    return <Admin />;
+  }
 
   const weddingDate = new Date('2026-09-12T17:00:00');
 

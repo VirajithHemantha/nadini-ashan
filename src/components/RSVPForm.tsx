@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { db } from '../firebase';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
@@ -9,9 +9,22 @@ export const RSVPForm: React.FC = () => {
   const [formData, setFormData] = useState({
     fullName: '',
     guests: '1',
-    dietaryNotes: '',
+    wish: '',
   });
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+  useEffect(() => {
+    const searchParams = new URLSearchParams(window.location.search);
+    const prefix = searchParams.get('prefix');
+    const name = searchParams.get('name');
+    
+    if (name) {
+      setFormData(prev => ({
+        ...prev,
+        fullName: prefix ? `${prefix} ${name}` : name
+      }));
+    }
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -23,7 +36,7 @@ export const RSVPForm: React.FC = () => {
       await submitToGoogleSheet('rsvp', {
         fullName: formData.fullName,
         guests: normalizedGuests,
-        dietaryNotes: formData.dietaryNotes,
+        wish: formData.wish,
         submittedAt: new Date().toISOString(),
       });
 
@@ -39,7 +52,7 @@ export const RSVPForm: React.FC = () => {
       }
 
       setStatus('success');
-      setFormData({ fullName: '', guests: '1', dietaryNotes: '' });
+      setFormData({ fullName: '', guests: '1', wish: '' });
     } catch (error) {
       console.error('Error sending RSVP to Google Sheets: ', error);
       setStatus('error');
@@ -148,12 +161,12 @@ export const RSVPForm: React.FC = () => {
                 </div>
 
                 <div>
-                  <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-stone-500 mb-3 ml-2">Dietary Notes (Optional)</label>
+                  <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-stone-500 mb-3 ml-2">Your Wishes for Us</label>
                   <textarea
-                    placeholder="We'd love to know if you have any allergies..."
+                    placeholder="Leave a sweet message for the couple..."
                     className="w-full bg-white/80 px-6 py-4 rounded-[2rem] border border-stone-200/60 focus:ring-2 focus:ring-brand-primary/30 focus:border-brand-primary-light/40 outline-none transition-all duration-300 h-28 resize-none font-serif italic text-lg shadow-inner placeholder:text-stone-300"
-                    value={formData.dietaryNotes}
-                    onChange={(e) => setFormData({ ...formData, dietaryNotes: e.target.value })}
+                    value={formData.wish}
+                    onChange={(e) => setFormData({ ...formData, wish: e.target.value })}
                   />
                 </div>
 
